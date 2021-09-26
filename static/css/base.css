@@ -8,12 +8,12 @@
 #title a {
         float: left;
         font-family: JetBrains_Mono_Regular_Nerd_Font_Complete;
-        font-size: 50px;
+        font-size: calc(100vh / 12);
         color: tomato;
         background-color: none;
         text-decoration: none;
-        margin-top: 10px;
-        margin-left: 10px;
+        margin-top: calc(100vh / 110);
+        margin-left: calc(100vh / 110);
         padding: 0px;
 }
 
@@ -29,9 +29,10 @@ body {
 .search {
         float: right;
         position: relative;
-        margin-right: 6%;
-        margin-top: 1.5%;
-        font-size: 39px;
+        margin-right: calc(100vh / 10);
+        margin-top: calc(100vh / 40);
+        font-size: calc(100vh / 15);
+        font-weight: bold;
         background-color: transparent;
         border: hidden;
         -webkit-transform: rotate(-45deg);
@@ -57,8 +58,8 @@ a:hover {
 #menuToggle {
         display:block;
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: calc(100vh / 18);
+        right: calc(100vh / 25);
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -79,8 +80,8 @@ a:hover {
 
 #menuToggle span {
         display: block;
-        width: 33px;
-        height: 4px;
+        width: calc(100vh / 36);
+        height: calc(100vh / 134);
         margin-bottom: 5px;
         position: relative;
         background: black;
@@ -98,6 +99,10 @@ a:hover {
 
 #menuToggle span:nth-last-child(2) {
         transform-origin: 0% 100%;
+}
+
+#menuToggle input:hover:not(:checked) ~ span {
+        background: tomato;
 }
 
 #menuToggle input:checked ~ span {
@@ -152,8 +157,9 @@ a:hover {
 
 #pageTitle {
         position: relative;
-        padding-top: 20px;
-        padding-left: 4px;
+        font-size: calc(100vh / 36);
+        padding-top: calc(100vh / 25);
+        padding-left: calc(100vh / 250);
         float: left;
         text-decoration: none;
 }
