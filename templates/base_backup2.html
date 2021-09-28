@@ -17,44 +17,45 @@
                         </div>
                         <!-- PAGE TITLE -->
                         <div class="pageTitle">
-                                {% block title %}home{% endblock %}
+                                {% block title %}
+                                        <h2> home </h2>
+                                {% endblock %}
                         </div>
                         <div class="searchButton">
                                 <button id="search">&#9906;</button>
                         </div>
-
-                        <!--
                         <div class="menuButton">
                                 <input type="checkbox" id="menu">
                                 <label id="nav_icon" for="menu">
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <ul id="popupMenu">
+                                </label>
+                        </div>
+                        <!-- NAVIGATION -->
+
+
+
+                        <!--
+                        <nav role="navigation">
+                                <div id="menuToggle">
+                                        <input type="checkbox"/>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <ul id="menu">
                                                 <a href="{% url 'home' %}"><li>home</li></a>
                                                 <a href="{% url 'products' %}"><li>products</li></a>
                                                 <a href="{% url 'aboutus' %}"><li>about us</li></a>
                                         </ul>
-
-                                </label>
-                        </div>
+                                </div>
+                                <button id="search">&#9906;</button>
+                        </nav>
                         -->
-                        <!-- NAVIGATION -->
-                        <div class="menuButton">
-                                <nav role="navigation">
-                                        <div id="menuToggle">
-                                                <input type="checkbox"/>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <ul id="menu">
-                                                        <a href="{% url 'home' %}"><li>home</li></a>
-                                                        <a href="{% url 'products' %}"><li>products</li></a>
-                                                        <a href="{% url 'aboutus' %}"><li>about us</li></a>
-                                                </ul>
-                                        </div>
-                                </nav>
-                        </div>
+
+
+
+
                 </div>
         <!--
                 MAIN BODY
