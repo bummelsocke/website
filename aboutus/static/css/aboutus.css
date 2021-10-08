@@ -1,9 +1,42 @@
-#aboutusContent {
+.aboutusLayout {
         position: absolute;
-        top: calc(100vh / 10);
-        left:  0px;
-        width: 100%;
-        height: calc(100vh - calc(100vh / 7));
-        border-top: solid;
-        background: blue;
+        top: 12vh;
+        left: 0px;
+        width: 100vw;
+        height: 86vh;
+        border: solid;
+        color: black;
+}
+.aboutusLayout_container {
+        display: grid;
+        width: inherit;
+        height: 258vh;
+        text-align: left;
+        justify-content: center;
+}
+.aboutus {
+        font-family: Untitled1;
+        font-size: 6vh;
+        font-weight: bold;
+        width: 100vw;
+        border: solid;
+}
+a {
+        color: black;
+        margin-left: 5vw;
+}
+a:hover {
+        color: darkorange;
+}
+
+.who {
+        background: darkgreen;
+}
+
+.why {
+        background: darkred;
+}
+
+.where {
+        background: yellow;
 }

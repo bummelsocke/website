@@ -1,7 +1,11 @@
-function openMenu() {
-        document.getElementById("popupMenu").style.width = "150px";
-}
+function menuFunction() {
+        var checkBox = document.getElementById("menuToggle");
+        var text = document.getElementById("menu");
 
-function closeMenu() {
-        document.getElementById("popupMenu").style.width = "0";
+        if (checkBox.checked == true) {
+                text.style.display = "block";
+        } else {
+                text.style.display = "none";
+
+        }
 }

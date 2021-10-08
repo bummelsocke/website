@@ -2,63 +2,41 @@
 <!DOCTYPE html>
 <html>
         <head>
-                <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-                {% block styles %}{% endblock %}
-
+                <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">{% block styles %}{% endblock %}</link>
+                <script type="text/javascript" src={% static 'javascript/menu.js' %}></script>
         </head>
         <body>
+                <header class="siteHeader">
+                        <div class="container siteHeader_container">
+                                <a href="{% url 'home' %}" class="title">HammerWein</a>
+                                <a class="pageTitle">
+                                        {% block title %}home{% endblock %}
+                                </a>
+                                <div class="searchButton">
+                                        <button id="search">&#9906;</button>
+                                </div>
+                                <div class="menuButton">
+                                        <nav class="navigation">
+                                                <input type="checkbox" id="menuToggle" onclick="menuFunction()">
+                                                <div id="menu" style="display:none">
+                                                        <ul id="menuChoices">
+                                                                <a href="{% url 'home' %}"><li>home</li></a>
+                                                                <a href="{% url 'products' %}"><li>products</li></a>
+                                                                <a href="{% url 'aboutus' %}"><li>about us</li></a>
+                                                        </ul>
+                                                </div>
+                                                <label id="navigationIcon" for="menuToggle">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                </label>
+                                        </nav>
+                                </div>
+                        </div>
+                </header>
                 <!--
-                        HEADER
+                  MAIN BODY
                 -->
-                <div class="containerHeading">
-                        <!-- TITLE -->
-                        <div class="title">
-                                <h1 href="{% url 'home' %}">HammerWein</h1>
-                        </div>
-                        <!-- PAGE TITLE -->
-                        <div class="pageTitle">
-                                {% block title %}home{% endblock %}
-                        </div>
-                        <div class="searchButton">
-                                <button id="search">&#9906;</button>
-                        </div>
-
-                        <!--
-                        <div class="menuButton">
-                                <input type="checkbox" id="menu">
-                                <label id="nav_icon" for="menu">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <ul id="popupMenu">
-                                                <a href="{% url 'home' %}"><li>home</li></a>
-                                                <a href="{% url 'products' %}"><li>products</li></a>
-                                                <a href="{% url 'aboutus' %}"><li>about us</li></a>
-                                        </ul>
-
-                                </label>
-                        </div>
-                        -->
-                        <!-- NAVIGATION -->
-                        <div class="menuButton">
-                                <nav role="navigation">
-                                        <div id="menuToggle">
-                                                <input type="checkbox"/>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <ul id="menu">
-                                                        <a href="{% url 'home' %}"><li>home</li></a>
-                                                        <a href="{% url 'products' %}"><li>products</li></a>
-                                                        <a href="{% url 'aboutus' %}"><li>about us</li></a>
-                                                </ul>
-                                        </div>
-                                </nav>
-                        </div>
-                </div>
-        <!--
-                MAIN BODY
-        -->
 
                 <div id="pageContent">
                         {% block content %}

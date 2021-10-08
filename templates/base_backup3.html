@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+                {% block styles %}{% endblock %}
+
+        </head>
+        <body>
+                <!--
+                        HEADER
+                -->
+                <div class="containerHeading">
+                        <!-- TITLE -->
+                        <div class="title">
+                                <h1 href="{% url 'home' %}">HammerWein</h1>
+                        </div>
+                        <!-- PAGE TITLE -->
+                        <div class="pageTitle">
+                                {% block title %}home{% endblock %}
+                        </div>
+                        <div class="searchButton">
+                                <button id="search">&#9906;</button>
+                        </div>
+
+                        <!--
+                        <div class="menuButton">
+                                <input type="checkbox" id="menu">
+                                <label id="nav_icon" for="menu">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <ul id="popupMenu">
+                                                <a href="{% url 'home' %}"><li>home</li></a>
+                                                <a href="{% url 'products' %}"><li>products</li></a>
+                                                <a href="{% url 'aboutus' %}"><li>about us</li></a>
+                                        </ul>
+
+                                </label>
+                        </div>
+                        -->
+                        <!-- NAVIGATION -->
+                        <div class="menuButton">
+                                <nav role="navigation">
+                                        <div id="menuToggle">
+                                                <input type="checkbox"/>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <ul id="menu">
+                                                        <a href="{% url 'home' %}"><li>home</li></a>
+                                                        <a href="{% url 'products' %}"><li>products</li></a>
+                                                        <a href="{% url 'aboutus' %}"><li>about us</li></a>
+                                                </ul>
+                                        </div>
+                                </nav>
+                        </div>
+                </div>
+        <!--
+                MAIN BODY
+        -->
+
+                <div id="pageContent">
+                        {% block content %}
+                        {% endblock %}
+                </div>
+        </body>
+        <!--
+                FOOTER
+        -->
+        <footer>
+
+
+        </footer>
+
+
+</html>
+
