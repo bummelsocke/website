@@ -1,9 +1,8 @@
-.homeLayout {
+.listlayout {
         position: absolute;
         top: 12vh;
         left: 0px;
         width: 100vw;
         height: 88vh;
         background: khaki;
-
 }

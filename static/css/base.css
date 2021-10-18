@@ -68,6 +68,7 @@
 #search {
         height: 8vh;
         width: 8vh;
+        color: transparent;
         font-size: 6vh;
         background: transparent;
         text-decoration: none;
@@ -77,9 +78,11 @@
         -o-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
 }
+/*
 #search:hover {
         color: purple;
 }
+*/
 
 /*
  * NAVIGATION
@@ -119,11 +122,10 @@
 }
 #menu {
         position: absolute;
-        top: 9.3vh;
+        top: 9vh;
         right: -3vw;
         width: 100vw;
-        height: 86.5vh;
-        border: solid;
+        height: 88vh;
         background-color: purple;
 }
 #menuChoices {
@@ -138,6 +140,9 @@
         color: black;
         align-items: center;
         margin-bottom: 3vh;
+}
+#menuChoices #suche {
+        margin-bottom: 6vh;
 }
 #menuChoices a {
         text-decoration: none;

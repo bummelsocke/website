@@ -1,0 +1,18 @@
+.listlayout {
+        position: absolute;
+        top: 12vh;
+        left: 0px;
+        width: 100vw;
+        height: 88vh;
+        background: darkblue;
+}
+.container .listlayout_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+}
+.item {
+        background: orange;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+}

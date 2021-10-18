@@ -3,8 +3,7 @@
         top: 12vh;
         left: 0px;
         width: 100vw;
-        height: 86vh;
-        border: solid;
+        height: 88vh;
         color: black;
 }
 .aboutusLayout_container {
@@ -19,7 +18,6 @@
         font-size: 6vh;
         font-weight: bold;
         width: 100vw;
-        border: solid;
 }
 a {
         color: black;
@@ -30,13 +28,13 @@ a:hover {
 }
 
 .who {
-        background: darkgreen;
+        background: teal;
 }
 
 .why {
-        background: darkred;
+        background: royalblue;
 }
 
 .where {
-        background: yellow;
+        background: mediumorchid;
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+        <link rel="stylesheet" href="{% static 'css/wein.css' %}">
+{% endblock %}
+{% block title %}
+products/wein
+{% endblock %}
+{% block content %}
+<div class="listlayout">
+        <div class="container listlayout_container">
+                {% for instance in object_list %}
+                <div class="item grid-item{{ forloop.counter }}">
+                                {{ instance.titel }}
+                                {{ instance.winzer }}
+                                {{ instance.jahrgang }}
+                        </div>
+                {% endfor %}
+
+        </div>
+</div>
+{% endblock %}

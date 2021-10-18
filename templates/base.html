@@ -13,13 +13,13 @@
                                         {% block title %}home{% endblock %}
                                 </a>
                                 <div class="searchButton">
-                                        <button id="search">&#9906;</button>
                                 </div>
                                 <div class="menuButton">
                                         <nav class="navigation">
                                                 <input type="checkbox" id="menuToggle" onclick="menuFunction()">
                                                 <div id="menu" style="display:none">
                                                         <ul id="menuChoices">
+                                                                <a href=""><li id="suche">suche</li></a>
                                                                 <a href="{% url 'home' %}"><li>home</li></a>
                                                                 <a href="{% url 'products' %}"><li>products</li></a>
                                                                 <a href="{% url 'aboutus' %}"><li>about us</li></a>

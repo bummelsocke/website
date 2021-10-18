@@ -19,10 +19,12 @@
         font-family: Untitled1;
         font-size: 6vh;
         font-weight: bold;
+        /*margin-top: 5vh;*/
         /*border: solid;*/
 }
-a {
+.products a {
         color: black;
+        text-decoration: none;
 }
 a:hover {
         color: darkorange;
@@ -33,18 +35,18 @@ a:hover {
         background: darkblue;
 }
 .braende {
-        color: blue;
-        background: blue;
+        color: royalblue;
+        background: royalblue;
 }
 .spirituosen {
         color: mediumseagreen;
         background: mediumseagreen;
 }
 .likoere {
-        color: yellow;
-        background: yellow;
+        color: khaki;
+        background: khaki;
 }
 .sonstiges {
-        color: darkmagenta;
-        background: darkmagenta;
+        color: mediumorchid;
+        background: mediumorchid;
 }
