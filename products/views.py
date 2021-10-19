@@ -1,15 +1,20 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.views import generic
 from .models import Wein
 
 def products(request):
     return render(request, 'products/products.html')
 
-def wein(request):
+class wein(generic.ListView):
+    model = Wein
+    context_object_name = 'object_list'
     queryset = Wein.objects.all()
-    context = {
-        'object_list': queryset
-    }
-    return render(request, 'products/wein.html', context)
+    template_name = 'products/wein.html'
+
+class wein_detail(generic.DetailView):
+    model = Wein
+    context_object_name = 'object'
+    template_name = 'products/weindetail.html'
 
 def braende(request):
     return render(request, 'products/braende.html')
@@ -22,3 +27,4 @@ def likoere(request):
 
 def sonstiges(request):
     return render(request, 'products/sonstiges.html')
+

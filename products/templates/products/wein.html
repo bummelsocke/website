@@ -10,15 +10,19 @@ products/wein
 {% endblock %}
 {% block content %}
 <div class="listlayout">
-        <div class="container listlayout_container">
-                {% for instance in object_list %}
-                <div class="item grid-item{{ forloop.counter }}">
-                                {{ instance.titel }}
-                                {{ instance.winzer }}
-                                {{ instance.jahrgang }}
+        <div class="listlayout_container">
+                {% for obj in object_list %}
+                <div class="grid-item">
+                        <div class="item-picture">
+                                <img class="picture" src="{% static 'images/vecteezy_beverage-liqueur-and-drink-cartoon_.jpg' %}"/>
                         </div>
+                        <div class="item-overview">
+                                <a href="{% url 'wein_detail' obj.id %}" class="overview">{{ obj.titel }}</a></br>
+                                <a class="overview">{{ obj.winzer }}</a></br>
+                                <a class="overview">{{ obj.jahrgang }}</a></br>
+                        </div>
+                </div>
                 {% endfor %}
-
         </div>
 </div>
 {% endblock %}
