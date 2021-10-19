@@ -4,30 +4,69 @@
         left: 0px;
         width: 100vw;
         height: 88vh;
-        background-color: yellow;
+        background-color: darkblue;
 }
 .objectTitle {
         grid-area: title;
         height: 10vh;
-        background: blue;
+        background: royalblue;
+}
+.otitle {
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 8vh;
+        color: darkmagenta;
+        margin-top: auto;
+        margin-left: 2vw;
+        margin-bottom: auto;
 }
 .objectPicture {
         grid-area: picture;
         height: 70vh;
         background: green;
-        text-align: left;
+        text-align: center;
+        margin-right: auto;
+}
+
+.picture {
+        width: inherit;
+        height: auto;
 }
 
 .objectProfile {
         grid-area: profile;
         height: 60vh;
+        flex-direction: row;
+        background: darkblue;
+}
+.leftSide {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+}
+.rightSide {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+}
+.profile {
+        display: flex;
         flex-direction: column;
-        background: red;
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 5vh;
 }
 .objectReview {
         grid-area: review;
         height: 29vh;
         background: magenta;
+}
+p {
+        font-family: Untitled1;
+        font-weight:  bold;
+        font-size: 5vh;
 }
 
 .detaillayout_container {

@@ -4,7 +4,7 @@
         left: 0px;
         width: 100vw;
         /*height: 88vh;*/
-        background-color: darkgreen;
+        background-color: darkblue;
 }
 .listlayout_container {
         display: grid;
@@ -20,10 +20,10 @@
         height: calc(88vh / 2);
         text-align: center;
         align-items: auto;
-        background-color: grey;
+        background-color: darkblue;
 }
 .grid-item:hover {
-        background-color: darkgrey;
+        background-color: royalblue;
 }
 .item-picture {
         margin-left: 2vw;
@@ -51,6 +51,7 @@
         font-family: Untitled1;
         font-weight: bold;
         font-size: 4vh;
+        color: purple;
         text-decoration: none;
 }
 .overview {
