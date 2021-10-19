@@ -6,3 +6,42 @@
         height: 88vh;
         background-color: yellow;
 }
+.objectTitle {
+        grid-area: title;
+        height: 10vh;
+        background: blue;
+}
+.objectPicture {
+        grid-area: picture;
+        height: 70vh;
+        background: green;
+        text-align: left;
+}
+
+.objectProfile {
+        grid-area: profile;
+        height: 60vh;
+        flex-direction: column;
+        background: red;
+}
+.objectReview {
+        grid-area: review;
+        height: 29vh;
+        background: magenta;
+}
+
+.detaillayout_container {
+        display: grid;
+        grid-template-areas:
+                'picture picture title   title   title'
+                'picture picture profile profile profile'
+                'picture picture profile profile profile'
+                'picture picture profile profile profile'
+                'picture picture profile profile profile'
+                'review  review  review  review  review'
+                'review  review  review  review  review';
+}
+.detaillayout_container > div {
+        text-align: center;
+        display: flex;
+}

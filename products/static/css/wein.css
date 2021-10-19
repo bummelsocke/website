@@ -9,8 +9,8 @@
 .listlayout_container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 0.5vh;
-        grid-row-gap: 0.5vh;
+        /*grid-column-gap: 0.5vh;
+        grid-row-gap: 0.5vh;*/
         grid-template-rows: repeat(2, 1fr);
 }
 .grid-item {
@@ -20,17 +20,20 @@
         height: calc(88vh / 2);
         text-align: center;
         align-items: auto;
-        background-color: darkblue;
+        background-color: grey;
+}
+.grid-item:hover {
+        background-color: darkgrey;
 }
 .item-picture {
         margin-left: 2vw;
+        margin-top: auto;
+        margin-bottom: auto;
         width: 11vw;
         border: solid;
 
 }
 .picture {
-        margin-top: auto;
-        margin-bottom: auto;
         width: 11vw;
         height: inherit;
 }
@@ -43,5 +46,17 @@
 .a {
         margin-top: 22vh;
         margin-bottom: 2vh;
+}
+.overview-title {
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 4vh;
+        text-decoration: none;
+}
+.overview {
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 3vh;
+
 }
 

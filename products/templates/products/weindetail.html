@@ -11,6 +11,33 @@ products/wein
 {% endblock %}
 {% block content %}
 <div class="detaillayout">
-        <h1>titel</h1>
+        <div class="detaillayout_container">
+                <div class="objectTitle">
+                        {{ object.titel }}
+                </div>
+                <div class="objectPicture">picture
+                        <!--
+                        <img class="picture" src="{% static 'images/vecteezy_beverage-liqueur-and-drink-cartoon_.jpg' %}"/>
+                        -->
+                </div>
+                <div class="objectProfile">
+                        <a class="profile">Winzer: {{ object.winzer }}</a></br>
+                        <a class="profile">Weinart: {{ object.weinart }}</a></br>
+                        <a class="profile">Rebsorte: {{ oject.rebsorte }}</a></br>
+                        <a class="profile">Ausbau: {{ object.ausbau }}</a></br>
+                        <a class="profile">Land: {{ object.land }}</a></br>
+                        <a class="profile">Region: {{ object.region}}</a></br>
+                        <a class="profile">Jahrgang: {{ object.jahrgang }}</a></br>
+                        <a class="profile">Inhalt: {{ object.inhalt }}</a></br>
+                        <a class="profile">Alk: {{ object.alk }}</a></br>
+                        <a class="profile">Saeure: {{ object.saeure}}</a></br>
+                        <a class="profile">Restzucker: {{ object.restzucker }}</a></br>
+                        <a class="profile">Sulfite: {{ obj.sulfite }}</a></br>
+                        <a class="profile">added: {{ object.added}}</a></br>
+                </div>
+                <div class="objectReview">
+                        <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
+                </div>
+        </div>
 </div>
 {% endblock %}

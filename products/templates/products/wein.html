@@ -17,7 +17,7 @@ products/wein
                                 <img class="picture" src="{% static 'images/vecteezy_beverage-liqueur-and-drink-cartoon_.jpg' %}"/>
                         </div>
                         <div class="item-overview">
-                                <a href="{% url 'wein_detail' obj.id %}" class="overview">{{ obj.titel }}</a></br>
+                                <a href="{% url 'wein_detail' obj.id %}" class="overview-title">{{ obj.titel }}</a></br>
                                 <a class="overview">{{ obj.winzer }}</a></br>
                                 <a class="overview">{{ obj.jahrgang }}</a></br>
                         </div>
