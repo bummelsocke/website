@@ -1,17 +1,17 @@
 from django.shortcuts import render, get_object_or_404
-from django.views import generic
+from django.views.generic import ListView, DetailView
 from .models import Wein
 
 def products(request):
     return render(request, 'products/products.html')
 
-class wein(generic.ListView):
+class wein(ListView):
+    paginate_by = 12
     model = Wein
-    context_object_name = 'object_list'
     queryset = Wein.objects.all()
     template_name = 'products/wein.html'
 
-class wein_detail(generic.DetailView):
+class wein_detail(DetailView):
     model = Wein
     context_object_name = 'object'
     template_name = 'products/weindetail.html'
