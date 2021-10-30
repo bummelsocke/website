@@ -3,10 +3,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block styles %}
-        <link rel="stylesheet" href="{% static 'css/weindetail.css' %}">
+        <link rel="stylesheet" href="{% static 'css/likoeredetail.css' %}">
 {% endblock %}
 {% block title %}
-products/wein
+products/likoere
 {% endblock %}
 {% block content %}
 <div class="detaillayout">
@@ -19,19 +19,11 @@ products/wein
                 </div>
                 <div class="objectProfile">
                         <div class="leftleftSide">
-                                <a class="profile">Winzer: </a>
-                                <a class="profile">Weinart: </a>
-                                <a class="profile">Rebsorte: </a>
-                                <a class="profile">Ausbau: </a>
                                 <a class="profile">Land: </a>
                                 <a class="profile">Region: </a>
                                 <a class="profile">Jahrgang: </a>
                         </div>
                         <div class="leftrightSide">
-                                <a class="profile">{{ object.winzer }}</a>
-                                <a class="profile">{{ object.weinart }}</a>
-                                <a class="profile">{{ object.rebsorte }}</a>
-                                <a class="profile">{{ object.ausbau }}</a>
                                 <a class="profile">{{ object.land }}</a>
                                 <a class="profile">{{ object.region }}</a>
                                 <a class="profile">{{ object.jahrgang }}</a>
@@ -39,16 +31,10 @@ products/wein
                         <div class="rightleftSide">
                                 <a class="profile">Inhalt: </a>
                                 <a class="profile">Alk: </a>
-                                <a class="profile">Saeure: </a>
-                                <a class="profile">Restzucker: </a>
-                                <a class="profile">Sulfite: </a>
                         </div>
                         <div class="rightrightSide">
                                 <a class="profile">{{ object.inhalt }} l</a>
                                 <a class="profile">{{ object.alk }} %</a>
-                                <a class="profile">{{ object.saeure }} %</a>
-                                <a class="profile">{{ object.restzucker }} gr</a>
-                                <a class="profile">{{ obj.sulfite }}</a>
                         </div>
                 </div>
                 <div class="objectReview">

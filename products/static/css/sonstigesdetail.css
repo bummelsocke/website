@@ -4,12 +4,12 @@
         left: 0px;
         width: 100vw;
         height: 88vh;
-        background-color: darkblue;
+        background-color: mediumorchid;
 }
 .objectTitle {
         grid-area: title;
         height: 10vh;
-        background: royalblue;
+        background: mediumpurple;
 }
 .otitle {
         font-family: Untitled1;
@@ -40,7 +40,7 @@
         column-gap: 3vw;
         height: 60vh;
         flex-direction: row;
-        background: darkblue;
+        background: mediumorchid;
 }
 .leftleftSide {
         margin-top: 6vh;

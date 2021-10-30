@@ -76,3 +76,89 @@ class Wein(models.Model):
     restzucker = models.DecimalField(max_digits=2, decimal_places=1)
     sulfite = models.BooleanField()
     added = models.DateTimeField(auto_now=True)
+
+class Braende(models.Model):
+    LAND_CHOICES = (
+            ('Deutschland', 'DE'),
+            ('Oesterreich', 'AT'),
+
+    )
+    REGION_CHOICES = (
+            ('Region1', '1'),
+            ('Region2', '2'),
+            ('Region3', '3'),
+            ('Region4', '4'),
+            )
+    artikelnr = models.IntegerField()
+    titel = models.CharField(max_length=100)
+    land = models.CharField(max_length=20, choices=LAND_CHOICES)
+    region = models.CharField(max_length=30, choices=REGION_CHOICES)
+    jahrgang = models.IntegerField(default=2020)
+    inhalt = models.DecimalField(default=0.75, max_digits=3, decimal_places=2)
+    alk = models.DecimalField(default=10.0, max_digits=3, decimal_places=1)
+    added = models.DateTimeField(auto_now=True)
+
+class Spirituosen(models.Model):
+    LAND_CHOICES = (
+            ('Deutschland', 'DE'),
+            ('Oesterreich', 'AT'),
+
+    )
+    REGION_CHOICES = (
+            ('Region1', '1'),
+            ('Region2', '2'),
+            ('Region3', '3'),
+            ('Region4', '4'),
+            )
+    artikelnr = models.IntegerField()
+    titel = models.CharField(max_length=100)
+    land = models.CharField(max_length=20, choices=LAND_CHOICES)
+    region = models.CharField(max_length=30, choices=REGION_CHOICES)
+    jahrgang = models.IntegerField(default=2020)
+    inhalt = models.DecimalField(default=0.75, max_digits=3, decimal_places=2)
+    alk = models.DecimalField(default=10.0, max_digits=3, decimal_places=1)
+    added = models.DateTimeField(auto_now=True)
+
+
+class Likoere(models.Model):
+    LAND_CHOICES = (
+            ('Deutschland', 'DE'),
+            ('Oesterreich', 'AT'),
+
+    )
+    REGION_CHOICES = (
+            ('Region1', '1'),
+            ('Region2', '2'),
+            ('Region3', '3'),
+            ('Region4', '4'),
+            )
+    artikelnr = models.IntegerField()
+    titel = models.CharField(max_length=100)
+    land = models.CharField(max_length=20, choices=LAND_CHOICES)
+    region = models.CharField(max_length=30, choices=REGION_CHOICES)
+    jahrgang = models.IntegerField(default=2020)
+    inhalt = models.DecimalField(default=0.75, max_digits=3, decimal_places=2)
+    alk = models.DecimalField(default=10.0, max_digits=3, decimal_places=1)
+    added = models.DateTimeField(auto_now=True)
+
+
+class Sonstiges(models.Model):
+    LAND_CHOICES = (
+            ('Deutschland', 'DE'),
+            ('Oesterreich', 'AT'),
+
+    )
+    REGION_CHOICES = (
+            ('Region1', '1'),
+            ('Region2', '2'),
+            ('Region3', '3'),
+            ('Region4', '4'),
+            )
+    artikelnr = models.IntegerField()
+    titel = models.CharField(max_length=100)
+    land = models.CharField(max_length=20, choices=LAND_CHOICES)
+    region = models.CharField(max_length=30, choices=REGION_CHOICES)
+    jahrgang = models.IntegerField(default=2020)
+    inhalt = models.DecimalField(default=0.75, max_digits=3, decimal_places=2)
+    alk = models.DecimalField(default=10.0, max_digits=3, decimal_places=1)
+    added = models.DateTimeField(auto_now=True)

@@ -3,6 +3,84 @@
         top: 12vh;
         left: 0px;
         width: 100vw;
-        height: 88vh;
-        background: mediumseagreen;
+        /*height: 88vh;*/
+        background-color: mediumseagreen;
 }
+.listlayout_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /*grid-column-gap: 0.5vh;
+        grid-row-gap: 0.5vh;*/
+        grid-template-rows: repeat(3, 1fr);
+}
+.grid-item {
+        color: black;
+        display: flex;
+        flex-direction: row;
+        height: calc(88vh / 2);
+        text-align: center;
+        align-items: auto;
+        background-color: mediumseagreen;
+}
+.grid-item:hover {
+        background-color: teal;
+}
+.item-picture {
+        margin-left: 2vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 11vw;
+        border: solid;
+
+}
+.picture {
+        width: 11vw;
+        height: inherit;
+}
+.item-overview {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+}
+.a {
+        margin-top: 22vh;
+        margin-bottom: 2vh;
+}
+.overview-title {
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 4vh;
+        color: purple;
+        text-decoration: none;
+}
+.overview {
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 3vh;
+
+}
+.pagination {
+        display: flex;
+}
+.step-links {
+        margin-left: auto;
+        margin-right: auto;
+}
+.current {
+        text-decoration: none;
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 5vh;
+        color: black;
+}
+
+
+.step-links a {
+        text-decoration: none;
+        font-family: Untitled1;
+        font-weight: bold;
+        font-size: 4vh;
+        color: purple;
+}
+
